@@ -1,14 +1,29 @@
 import { useState } from 'react'
 import './App.css'
-import WorkExperience from './components/WorkExperience'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import PdfTemplate from './components/PdfTemplate'
+import Contact from './pages/Contact'
+import Header from './pages/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [data, setData] = useState({
+    name: "",
+    pos: "",
+    tagLine: "",
+    email:"",
+    number:"",
+    gitId:"",
+    LinId:""
+  })
   return (
-    <>
-      <WorkExperience/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Header data={data} setData={setData} />} />
+        <Route path='/renderpdf' element={<PdfTemplate data={data} />} />
+        <Route path='/contact' element={<Contact data={data} setData={setData} />} />
+      </Routes>
+    </BrowserRouter>
+
   )
 }
 
