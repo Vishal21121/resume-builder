@@ -11,7 +11,7 @@ const Header = ({data, setData}) => {
                 <Input type="text" setData={setData} name="name" placeholder="Enter your name" value={data.name} />
                 <Input type="text" setData={setData} name="pos" placeholder="Enter your position" value={data.pos} />
                 <Input type="text" setData={setData} name="tagLine" placeholder="Enter your tagline" value={data.tagLine} />
-                <SwitchButton prev="" ford="/contact" prevDisabled="true" fordDisabled="false" />
+                <SwitchButton prev="" ford="/contact" prevActive={false} fordActive={true} />
             </Form>
         </div>
     )
