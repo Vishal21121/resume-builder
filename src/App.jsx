@@ -6,6 +6,7 @@ import Header from './pages/Header'
 import Skill from './pages/Skill'
 import Work from './pages/Work'
 import PdfView from './pages/PdfView'
+import Education from './pages/Education'
 
 function App() {
   const [data, setData] = useState({
@@ -19,7 +20,10 @@ function App() {
     skill: [],
     position:"",
     comapny:"",
-    duration:""
+    duration:"",
+    degree:"",
+    university:"",
+    edduration:""
   })
   return (
     <BrowserRouter>
@@ -29,6 +33,7 @@ function App() {
         <Route path='/contact' element={<Contact data={data} setData={setData} />} />
         <Route path='/skill' element={<Skill data={data} setData={setData} />} />
         <Route path='/work' element={<Work data={data} setData={setData} />} />
+        <Route path='/edu' element={<Education data={data} setData={setData} />} />
       </Routes>
     </BrowserRouter>
 

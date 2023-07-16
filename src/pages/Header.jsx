@@ -3,7 +3,7 @@ import Form from '../components/Form'
 import Input from '../components/Input'
 import SwitchButton from '../components/SwitchButton'
 
-const Header = ({data, setData}) => {
+const Header = ({ data, setData }) => {
     return (
         <div>
             <Form >

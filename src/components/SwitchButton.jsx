@@ -12,6 +12,7 @@ const SwitchButton = ({ prev, ford, prevActive, fordActive }) => {
                 fordActive ? <Link to={ford} className='text-white bg-blue-500 hover:bg-blue-600 w-fit p-2 rounded-lg mx-2'>Forward</Link>
                     : ""
             }
+            <Link to="/renderpdf" className="text-white bg-purple-500 hover:bg-purple-600 w-fit p-2 rounded-lg mx-2 ">Preview</Link>
 
         </div>
     )
