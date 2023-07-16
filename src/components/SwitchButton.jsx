@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const SwitchButton = ({ prev, ford, prevActive, fordActive }) => {
-    console.log(typeof prevActive, typeof fordActive)
     return (
         <div className='flex justify-center my-4 '>
             {

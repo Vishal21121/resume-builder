@@ -4,7 +4,7 @@ import PdfTemplate from '../components/PdfTemplate'
 
 const PdfView = ({data}) => {
   return (
-    <PDFViewer showToolbar className='w-screen h-screen'>
+    <PDFViewer className='w-screen h-screen'>
         <PdfTemplate data={data}/>
     </PDFViewer>
   )
