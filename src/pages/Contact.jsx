@@ -11,7 +11,7 @@ const Contact = ({ data, setData }) => {
             <Input type="number" setData={setData} name="number" placeholder="Enter your number" value={data.number} />
             <Input type="text" setData={setData} name="gitId" placeholder="Enter your GitHub userid" value={data.gitId} />
             <Input type="text" setData={setData} name="LinId" placeholder="Enter your LinkedIn userid" value={data.LinkId} />
-            <SwitchButton prev="/" ford="/work" prevActive={true} fordActive={true} />
+            <SwitchButton prev="/" ford="/skill" prevActive={true} fordActive={true} />
         </Form>
     )
 }
