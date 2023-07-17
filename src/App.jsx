@@ -18,12 +18,12 @@ function App() {
     gitId: "",
     LinId: "",
     skill: [],
-    position:"",
-    comapny:"",
-    duration:"",
-    degree:"",
-    university:"",
-    edduration:""
+    position: "",
+    company: "",
+    duration: "",
+    degree: "",
+    university: "",
+    edduration: ""
   })
   return (
     <BrowserRouter>

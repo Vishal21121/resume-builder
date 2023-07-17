@@ -1,22 +1,21 @@
 import React, { useEffect } from 'react'
 import { Document, Page, View, Text, StyleSheet, Image } from "@react-pdf/renderer"
-import { Mail } from "react-feather"
 
 const PdfTemplate = ({ data }) => {
-  
-  function protectDataLoss(e){
+
+  function protectDataLoss(e) {
     e.preventDefault()
     return alert("Do you want to reload this page doing this will lead to removal of all the data")
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     window.addEventListener('beforeunload', protectDataLoss);
 
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('beforeunload', protectDataLoss);
     };
-  },[])
+  }, [])
 
   return (
     <Document>
@@ -77,7 +76,7 @@ const PdfTemplate = ({ data }) => {
         <View style={styles.headerEl}>
           <Text style={{ fontSize: "15px", color: "#00308F", marginVertical: "10px" }}>WORK EXPERIENCE</Text>
           <Text>{data.position}</Text>
-          <Text>{data.comapny}</Text>
+          <Text>{data.company}</Text>
           <Text>{data.duration}</Text>
         </View>
 
